@@ -17,6 +17,7 @@ body {
     position:fixed;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 .main-nav li {
@@ -52,7 +53,7 @@ body {
 
 .shoe-section {
     height: 100vh;
-    text-align: center;
+    position: relative;
 }
 
 #bg-red {
@@ -67,13 +68,21 @@ body {
     background-color: yellow;
 }
 
-.shoe-section h1 {
-    font-size: 60px;
-    color: yellow;
-    width: 900px;
-    margin: 0 auto;
-}
-
 .shoe-section h1.green {
     color: green;
+}
+
+.shoe-container {
+    font-size: 23px;
+    text-align: center;
+    color: yellow;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shoe-container img {
+    width: 100%;
 }
