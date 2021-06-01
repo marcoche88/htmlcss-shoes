@@ -4,11 +4,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Rubik Mono One', sans-serif;
 }
+
+/* nav */
+
+.main-nav {
+    position:fixed;
+    top: 0;
+    right: 0;
+}
+
+.main-nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 40px 20px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.main-nav li a:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.main-nav li a:active {
+    transform: scale(1);
+} 
 
 /* main */
 
